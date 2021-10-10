@@ -3,10 +3,12 @@ package com.example.shoppinglist;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mReplyTextView4;
     private TextView mReplyTextView5;
     private TextView mReplyTextView6;
+    private EditText mLocationEditText;
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
 
     @Override
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         mReplyTextView4 = findViewById(R.id.show_item4);
         mReplyTextView5 = findViewById(R.id.show_item5);
         mReplyTextView6 = findViewById(R.id.show_item6);
+        mLocationEditText = findViewById(R.id.location_edittext);
 
         if (savedInstanceState != null) {
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
@@ -99,5 +103,12 @@ public class MainActivity extends AppCompatActivity {
             outState.putString("reply_text5", mReplyTextView5.getText().toString());
             outState.putString("reply_text6", mReplyTextView6.getText().toString());
         }
+    }
+
+    public void openLocation(View view) {
+        String loc = mLocationEditText.getText().toString();
+        Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
+        Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+        startActivity(intent);
     }
 }

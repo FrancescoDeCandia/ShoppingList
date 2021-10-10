@@ -8,4 +8,6 @@
     <string name="button4">Milk</string>
     <string name="button5">Bread</string>
     <string name="button6">Fish</string>
+    <string name="edittext_loc"></string>
+    <string name="button_loc">Find Store</string>
 </resources>

@@ -9,7 +9,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_6"
         android:layout_width="250dp"
-        android:layout_height="85dp"
+        android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:onClick="returnReply"
         android:text="Fish"
@@ -24,7 +24,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_5"
         android:layout_width="250dp"
-        android:layout_height="85dp"
+        android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:onClick="returnReply"
         android:text="Bread"
@@ -39,7 +39,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_1"
         android:layout_width="250dp"
-        android:layout_height="85dp"
+        android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="50dp"
         android:onClick="returnReply"
@@ -55,7 +55,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_2"
         android:layout_width="250dp"
-        android:layout_height="85dp"
+        android:layout_height="75dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:onClick="returnReply"
@@ -71,7 +71,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_3"
         android:layout_width="250dp"
-        android:layout_height="85dp"
+        android:layout_height="75dp"
         android:layout_marginEnd="8dp"
         android:onClick="returnReply"
         android:text="Apples"
@@ -86,7 +86,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_4"
         android:layout_width="250dp"
-        android:layout_height="85dp"
+        android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:onClick="returnReply"
         android:text="Milk"
