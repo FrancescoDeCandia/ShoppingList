@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mReplyTextView6 = findViewById(R.id.show_item6);
         mLocationEditText = findViewById(R.id.location_edittext);
 
+
         if (savedInstanceState != null) {
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
             if (isVisible) {
